@@ -1,0 +1,10 @@
+@import '_settings.scss';
+
+@tailwind base;
+@tailwind components;
+
+@import 'transitions.scss';
+@import 'toasted.scss';
+@import 'tooltips.scss';
+
+@tailwind utilities;
