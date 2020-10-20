@@ -3,9 +3,9 @@
 
 return [
     'title' => [
-        'short' => 'My Site',
-        'full' => 'My Site - Laravel',
-        'separator' => '|',
+        'short' => 'Alison and Jamie',
+        'full' => 'It\s a good day for a white wedding! - Alison and Jamie',
+        'separator' => '-',
     ],
 
     'metas' => [

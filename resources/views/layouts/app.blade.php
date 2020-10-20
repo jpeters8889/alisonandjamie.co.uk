@@ -11,15 +11,25 @@
 
     @include('page-view-builder::header')
 </head>
-<body class="">
+<body class="flex">
 
-<div class="" id="app">
-    @yield('content')
+<div class="w-full" id="app">
+    <header class="w-full flex flex-col">
+        <navigation></navigation>
+
+        @yield('header')
+    </header>
+
+    <div class="flex flex-col space-y-3 mt-3 px-2 xl:px-0">
+        @yield('content')
+    </div>
 </div>
 
 <script src="{{ mix('/assets/js/manifest.js') }}" async defer></script>
 <script src="{{ mix('/assets/js/vendor.js') }}" async defer></script>
 <script src="{{ mix('/assets/js/app.js') }}" async defer></script>
+
+@yield('scripts')
 
 </body>
 </html>

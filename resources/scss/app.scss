@@ -1,4 +1,5 @@
 @import '_settings.scss';
+@import 'fonts.scss';
 
 @tailwind base;
 @tailwind components;
@@ -6,5 +7,45 @@
 @import 'transitions.scss';
 @import 'toasted.scss';
 @import 'tooltips.scss';
+
+.main-header {
+    background-image: url('/assets/images/header.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-position-y: -140px;
+    max-height: 562px;
+}
+
+.page-box {
+    @apply bg-gray-100 p-4 w-full max-w-site mx-auto text-sm;
+
+    .heading {
+        @apply font-headline text-xl leading-none mb-2;
+    }
+
+    p {
+        @apply mb-2;
+    }
+
+    a {
+        @apply font-semibold
+
+        &:hover {
+            @apply underline;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .main-header {
+        background-position-y: -100px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main-header {
+        background-position-y: -140px;
+    }
+}
 
 @tailwind utilities;
