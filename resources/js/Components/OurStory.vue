@@ -17,109 +17,66 @@
         </div>
 
         <div>
-            <img src="/assets/images/us-1.jpg" alt="Alison and Jamie" class="mb-2 xs:w-1/2 xs:pr-2 xs:pb-2 xs:mb-0 xs:float-left" />
+            <img src="/assets/images/us-1.jpg" alt="Alison and Jamie"
+                 class="mb-2 xs:w-1/2 xs:pr-2 xs:pb-2 xs:mb-0 xs:float-left"/>
 
             <template v-if="show === 'story'">
                 <p>
-                    We first 'met' online on Facebook, Alison ran a Green Day fan page which Jamie came across one day
-                    in
-                    2011,
-                    the page became one of Jamie's favourites when over time he learnt more about the person who ran it,
-                    who
-                    was
-                    also English, into the same music, and shared a lot of interests including Web Design, Harry Potter
-                    and
-                    other fantasy stories.
+                    Alison and Jamie first 'met' online through Facebook, Alison ran a Green Day fan page which Jamie
+                    came across one day in 2011, the page became one of Jamie's favourites. Over time he learnt more
+                    about the person who ran it, he learnt she also lived in the UK, was into the same music, and shared
+                    a lot of interests including Web Design and Harry Potter.
                 </p>
 
                 <p>
                     In December 2011 the friendship moved from a Facebook page to Facebook friends and over the next few
-                    months
-                    we began chatting on Facebook messenger, before in July 2012 we exchanged phone numbers when Alison
-                    was
-                    on
-                    holiday and the mobile internet signal was poor at best!
+                    months they chatted on messenger and then exchanged phone numbers when Alison went on holiday in
+                    2012.
                 </p>
 
                 <p>
-                    Very quickly we were exchanging 100s of texts per week, talking all the time, and then in October
-                    2012
-                    we
-                    met in person for the first time at a Bowling for Soup concert at Manchester Academy. Over the next
-                    few
-                    weeks and months we were talking more and there were hints from both of us about something further.
+                    It very quickly turned into exchanging 100s of texts per week, then in October 2012 they finally met
+                    in person for the first time at a Bowling for Soup concert at Manchester Academy.
                 </p>
 
                 <p>
-                    Valentines Day 2013 we 'got together' for the first time, and a couple of days later we met up in
-                    Manchester
-                    to go on a 'date' round the Natural History museum and Science museum, but Alison wasn't ready for a
-                    relationship and ended it, but we remained friends.
+                    Valentines Day 2013 they decided to try life as boyfriend and girlfriend, a couple of days later
+                    they met up in Manchester to go on a 'date' round the Natural History museum and Science museum,
+                    after that meeting Alison ditched Jamie via text as he travelled back to South Yorkshire on the
+                    train, they remained friends though.
                 </p>
 
                 <p>
-                    Over the next few months we met regularly, from going to concerts together, Leeds festival for the
-                    day
-                    and
-                    more, and in that time Jamie remained interested, and Alison's feelings began to grow. In early
-                    September
-                    2013 Alison invited Jamie to join her in seeing Harry Radford in Manchester on his first solo show
-                    after
-                    her
+                    Over the next few months they met regularly and slowly Alison's feelings began to grow. In early
+                    September 2013 Alison invited Jamie to join her in seeing Harry Radford in Manchester after her
                     friend had to cancel last minute, Jamie agreed, and as part of his set he covered 'Just the Way You
-                    Are'
-                    by
-                    Bruno Mars, a song Jamie had previously said was written about Alison, and while Jamie was miming
-                    along
-                    the
-                    words while glancing at Alison she realised that she did have strong feelings for him, and a few
-                    days
-                    later,
-                    on 11th September 2013 we made it official.
+                    Are' by Bruno Mars, a song Jamie had previously said was written about Alison, and while Jamie was
+                    miming along the words while glancing at Alison she realised she might be ready to try the
+                    relationship thing again, so on 11th September 2013 they made it official… again. A matter of weeks
+                    later they followed Bowling For Soup round the country for a week as a first 'holiday' together.
                 </p>
 
                 <p>
-                    A matter of weeks later we went on our first 'holiday' together, a week following Bowling for Soup
-                    around
-                    the country on tour.
+                    They got engaged on Valentines Day 2016, Alison asked Jamie while they were having a weekend away on
+                    Anglesey, she asked him on the cliff tops near Trearddur Bay, of course he said yes straight away,
+                    and it was something he himself had been thinking about for a long time.
                 </p>
 
                 <p>
-                    We got engaged on Valentines Day 2016, Alison asked Jamie while they were having a weekend away on
-                    Anglesey,
-                    she asked him on the cliff tops near Treadurr Bay, the same spot her grandparents ashes were
-                    scattered
-                    from,
-                    a spot that means a lot to her, of course he said yes straight away, and it was something he himself
-                    had
-                    been thinking about for a long time.
+                    They both said it would be nice to get married on the day we got together, save Alison remembering
+                    another date! That day happened to fall on a Saturday in 2021, Jamie thought it wouldn't happen and
+                    didn’t really give it a second thought but in late September 2020 Alison mentioned that she enquired
+                    on the off chance about that date, it was available, and they booked it!
                 </p>
 
                 <p>
-                    We had both said it would be nice to get married on the day we got together, and that day happened
-                    to
-                    fall
-                    on a Saturday in 2021, Jamie thought it wouldn't happen, it's expensive, and then with Coronavirus
-                    through
-                    2020 it looked even more unlikely, but in late September 2020 Alison mentioned that she enquired on
-                    the
-                    off
-                    chance about that date, and it was available, and we booked it!
-                </p>
-
-                <p>
-                    And then so begins the actual wedding planning, after the ceremony was booked spur of the moment we
-                    began
-                    looking at reception venues and more, and everything began to fall into place!
-                </p>
-
-                <p>
-                    And we can't wait to see you there!
+                    Now they can't wait to see you there!
                 </p>
             </template>
 
             <template v-if="show === 'info'">
-                <div v-for="(tidbit, index) in tidbits" class="border-b border-gray-400 last:border-b-0 pb-3" :class="index > 0 ? 'pt-3' : ''">
+                <div v-for="(tidbit, index) in tidbits" class="border-b border-gray-400 last:border-b-0 pb-3"
+                     :class="index > 0 ? 'pt-3' : ''">
                     <h3 class="font-headline">Q - {{ tidbit.question }}</h3>
                     <p style="margin-bottom: 0">{{ tidbit.answer }}</p>
                 </div>

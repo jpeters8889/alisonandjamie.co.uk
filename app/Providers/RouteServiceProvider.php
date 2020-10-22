@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
         /** @var Router $router */
         $router = Container::getInstance()->make(Router::class);
 
-        /** @phpstan-ignore-next-line  */
+        /* @phpstan-ignore-next-line  */
         $router->middleware('web')->group(function () use ($router) {
             require base_path('routes/web.php');
         });

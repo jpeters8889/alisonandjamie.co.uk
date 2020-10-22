@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full" style="min-width: 200px; min-height: 200px" ref='map'></div>
+    <div class="w-full h-full" style="min-width: 200px; min-height: 200px" :ref='mapRef'></div>
 </template>
 
 <script>
@@ -21,22 +21,46 @@ export default {
         }
     },
 
+    data: () => ({
+        mapRef: '',
+    }),
+
+    created() {
+        this.mapRef = Math.random().toString(36).substring(2, 15);
+    },
+
     mounted() {
-        const center = new google.maps.LatLng(this.lat, this.lng);
+        this.createMap();
+    },
 
-        const map = new google.maps.Map(this.$refs['map'], {
-            center: center,
-            zoom: this.zoom,
-            mapTypeControl: false,
-            streetViewControl: false,
-            rotateControl: false,
-            fullscreenControl: false
-        });
+    methods: {
+        createMap() {
+            const center = new google.maps.LatLng(this.lat, this.lng);
 
-        new google.maps.Marker({
-            position: center,
-            map: map,
-        });
+            const map = new google.maps.Map(this.$refs[this.mapRef], {
+                center: center,
+                zoom: this.zoom,
+                mapTypeControl: false,
+                streetViewControl: false,
+                rotateControl: false,
+                fullscreenControl: false
+            });
+
+            new google.maps.Marker({
+                position: center,
+                map: map,
+            });
+        }
+    },
+
+    watch: {
+        lat: function () {
+            this.createMap();
+        },
+
+        lng: function () {
+            this.createMap();
+        }
     }
 }
 </script>

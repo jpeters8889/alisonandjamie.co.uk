@@ -58,7 +58,7 @@ export default {
 
             {
                 text: 'Q and A',
-                href: '/',
+                href: '/q-and-a',
             },
 
             {

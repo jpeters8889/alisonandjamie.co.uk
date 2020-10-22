@@ -6,11 +6,11 @@ namespace App\Http\Controllers;
 
 use JPeters\PageViewBuilder\Page;
 
-class TravelController extends Controller
+class QAndAController extends Controller
 {
     public function get(Page $page)
     {
-        return $page->setPageTitle('Travel and Accommodation')
-            ->render('travel');
+        return $page->setPageTitle('Questions and Answers')
+            ->render('qanda');
     }
 }
