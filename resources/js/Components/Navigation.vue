@@ -13,7 +13,7 @@
                 </div>
 
                 <div v-if="showMobileNav"
-                     class="fixed top-0 left-0 bg-gray-900 text-white leading-none w-full h-full font-headline flex flex-col lg:hidden">
+                     class="z-50 fixed top-0 left-0 bg-gray-900 text-white leading-none w-full h-full font-headline flex flex-col lg:hidden">
                     <ul class="text-center flex-1 flex flex-col items-center justify-center space-y-6">
                         <li v-for="item in navigation">
                             <a :href="item.href" class="p-4 text-center">{{ item.text }}</a>
