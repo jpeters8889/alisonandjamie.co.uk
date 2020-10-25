@@ -63,7 +63,7 @@
         {{--        </p>--}}
 
         <p>
-            <strong>Invitations</strong> with thanks to Jamie Peters for designing and
+            <strong>Invitations</strong> - with thanks to Jamie Peters for designing and
             <a href="https://www.digitalprinting.co.uk/" target="_blank">Digital Printing UK</a> for printing.
         </p>
 
