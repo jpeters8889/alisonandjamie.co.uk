@@ -3,7 +3,10 @@ module.exports = {
         // removeDeprecatedGapUtilities: true,
         // purgeLayersByDefault: true,
     },
-    purge: [],
+    purge: [
+        './resources/views/*.blade.php',
+        './resources/js/Components/*.vue',
+    ],
     target: 'relaxed',
     prefix: '',
     important: false,

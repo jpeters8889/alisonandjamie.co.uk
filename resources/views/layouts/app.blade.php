@@ -10,6 +10,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @include('page-view-builder::header')
+
+    <link rel="preload" as="font" href="/assets/fonts/DirtyHeadline.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/DirtyHeadline.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/PunkRockShow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/PunkRockShow-Regular.woff" type="font/woff" crossorigin="anonymous">
+
 </head>
 <body class="flex">
 
