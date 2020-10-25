@@ -20,6 +20,10 @@ abstract class BookingAvailabilityRule implements Rule
 
     public function passes($attribute, $value): bool
     {
+        if ($value === true && $this->request->input('cant_make_it') === true) {
+            return false;
+        }
+
         $check = $this->request->invitation()->{$this->invitationVariable()};
 
         // If the check is available and the passed value isn't a bool
@@ -28,7 +32,7 @@ abstract class BookingAvailabilityRule implements Rule
         }
 
         // If the check isn't available and the value is true
-        if ($value === true && ! $check) {
+        if ($value === true && !$check) {
             return false;
         }
 

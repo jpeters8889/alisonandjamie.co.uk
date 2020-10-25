@@ -24,6 +24,8 @@ class StaticPageTest extends TestCase
             ['/venues-and-schedule'],
             ['/travel-and-accommodation'],
             ['/q-and-a'],
+            ['/rsvp/thanks'],
+            ['/thanks-to'],
         ];
     }
 }

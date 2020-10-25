@@ -28,12 +28,13 @@ class BookingRequest extends ApiFormRequest
     {
         return [
             'invitation_id' => ['required', 'exists:invitations,id'],
+            'cantMakeIt' => ['bool'],
             'ceremony' => ['bool', new BookingCeremonyAvailableRule($this)],
             'afternoon' => ['bool', new BookingAfternoonAvailableRule($this)],
             'evening' => ['bool', new BookingEveningAvailableRule($this)],
             'guests' => ['required', 'array', new BookingGuestLimitRule($this)],
             'guests.*.name' => ['required'],
-            'guests.*.age' => ['required', Rule::in(['0-4', '5-12', '13-18', '18+'])],
+            'guests.*.ageRange' => ['required', Rule::in(['0-4', '5-12', '13-18', '18+'])],
         ];
     }
 }

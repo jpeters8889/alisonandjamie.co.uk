@@ -18,6 +18,10 @@ class BookingGuestLimitRule implements Rule
 
     public function passes($attribute, $value)
     {
+        if (count($value) > 1 && $this->request->input('cant_make_it') === true) {
+            return false;
+        }
+
         return count($value) <= $this->request->invitation()->limit;
     }
 

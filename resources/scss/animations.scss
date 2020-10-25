@@ -1,0 +1,19 @@
+.animate-shake {
+    animation-name: shake;
+    animation-duration: 250ms!important;
+    animation-timing-function: linear;
+}
+
+@keyframes shake {
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+        transform: translateX(0);
+    }
+
+    5%, 25%, 45%, 65%, 85% {
+        transform: translateX(-4px);
+    }
+
+    15%, 35%, 55%, 75%, 95% {
+        transform: translateX(4px);
+    }
+}

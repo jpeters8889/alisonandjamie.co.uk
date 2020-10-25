@@ -3,12 +3,10 @@
 @section('content')
 
     <div class="page-box">
-        <h2 class="heading">Questions and Answers</h2>
-
         <div class="flex flex-col space-y-3">
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">When is the RSVP deadline?</strong>
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">When is the RSVP deadline?</strong>
 
                 <p>
                     Your invitation will have a deadline on it, for people attending for the entire day it will be 31st
@@ -16,8 +14,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">Can I bring a date / the kids?</strong>
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">Can I bring a date / the kids?</strong>
 
                 <p>
                     We've tried to put a +1 on all the invitations where we can, and even tried leaving space for kids
@@ -25,8 +23,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">What is there for kids to do / Is the evening child
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">What is there for kids to do / Is the evening child
                     friendly?</strong>
 
                 <p>
@@ -37,8 +35,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">What about parking?</strong>
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">What about parking?</strong>
 
                 <p>
                     For the main ceremony there's an open car park outside the Lyceum Theater in Crewe, directly behind
@@ -56,8 +54,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">What should I wear</strong>
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">What should I wear</strong>
 
                 <p>
                     For the main wedding ceremony we'd appreciate it if you can look your best, but for the evening
@@ -66,8 +64,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">What food is on offer? / I have a dietary
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">What food is on offer? / I have a dietary
                     restriction!</strong>
 
                 <p>
@@ -83,8 +81,8 @@
                 </p>
             </div>
 
-            <div class="flex flex-col">
-                <strong class="font-headline font-semibold mb-2">Will there be dancing?</strong>
+            <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
+                <strong class="font-headline font-semibold mb-2 text-lg">Will there be dancing?</strong>
 
                 <p>
                     There will be a dance floor in front of the band available for any dancing (Or moshing!)

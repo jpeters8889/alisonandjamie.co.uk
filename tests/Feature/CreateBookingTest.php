@@ -171,10 +171,10 @@ class CreateBookingTest extends TestCase
     public function it_stores_the_guests_data()
     {
         $this->makeRequest([
-           'guests' => [
-               ['name' => 'Jamie', 'age' => '18+'],
-               ['name' => 'Alison', 'age' => '13-18'],
-           ],
+            'guests' => [
+                ['name' => 'Jamie', 'ageRange' => '18+'],
+                ['name' => 'Alison', 'ageRange' => '13-18'],
+            ],
         ]);
 
         $this->assertCount(2, $this->invitation->fresh()->booking->guests);
@@ -182,16 +182,71 @@ class CreateBookingTest extends TestCase
         $this->assertDatabaseHas('booking_guests', ['name' => 'Alison', 'age_range' => '13-18']);
     }
 
+    /** @test */
+    public function it_errors_if_submit_an_i_cant_make_it_rsvp_with_additional_options_checked()
+    {
+        $this->makeRequest(['cant_make_it' => true, 'afternoon' => false, 'evening' => false])
+            ->assertStatus(422);
+
+        $this->makeRequest(['cant_make_it' => true, 'ceremony' => false, 'evening' => false])
+            ->assertStatus(422);
+
+        $this->makeRequest(['cant_make_it' => true, 'afternoon' => false, 'ceremony' => false])
+            ->assertStatus(422);
+    }
+
+    /** @test */
+    public function it_errors_when_an_i_cant_make_it_request_with_multiple_guests_is_submitted()
+    {
+        $this->makeRequest([
+            'cant_make_it' => true,
+            'ceremony' => false,
+            'afternoon' => false,
+            'evening' => false,
+            'guests' => [
+                ['name' => 'Jamie', 'ageRange' => '18+'],
+                ['name' => 'Alison', 'ageRange' => '13-18'],
+            ],
+        ])->assertStatus(422);
+    }
+
+    /** @test */
+    public function it_stores_the_cant_make_it_value_in_the_database()
+    {
+        $this->makeRequest();
+
+        $this->assertFalse($this->invitation->fresh()->booking->cant_make_it);
+
+        $this->makeRequest([
+            'cant_make_it' => true,
+            'ceremony' => false,
+            'afternoon' => false,
+            'evening' => false,
+        ]);
+
+        $this->assertTrue($this->invitation->fresh()->booking->cant_make_it);
+    }
+
+    /** @test */
+    public function it_stores_the_song_suggestions_in_the_table()
+    {
+        $this->makeRequest(['song_suggestions' => 'Foobar']);
+
+        $this->assertEquals('Foobar', $this->invitation->fresh()->booking->song_suggestions);
+    }
+
     protected function makeRequest($params = [])
     {
         return $this->post('/api/bookings', array_merge([
             'invitation_id' => $this->invitation->id,
+            'cant_make_it' => false,
             'ceremony' => true,
             'afternoon' => true,
             'evening' => true,
             'guests' => [
-                ['name' => $this->faker->name, 'age' => '18+'],
+                ['name' => $this->faker->name, 'ageRange' => '18+'],
             ],
+            'song_suggestions' => $this->faker->sentence,
         ], $params));
     }
 }

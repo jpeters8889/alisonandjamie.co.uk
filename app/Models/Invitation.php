@@ -30,12 +30,18 @@ class Invitation extends Model
 
     protected $guarded = [];
 
+    protected $hidden = ['created_at', 'updated_at'];
+
     public $incrementing = false;
+
+    protected $with = ['booking'];
 
     protected static function booted()
     {
         static::creating(static function (self $invitation) {
-            $invitation->id = random_int(100, 999);
+            if(!$invitation->id) {
+                $invitation->id = random_int(100, 999);
+            }
 
             return $invitation;
         });

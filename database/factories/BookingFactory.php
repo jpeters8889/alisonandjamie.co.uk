@@ -25,11 +25,24 @@ class BookingFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'limit' => random_int(1, 5),
+            'cant_make_it' => false,
             'ceremony' => true,
             'afternoon' => true,
             'evening' => true,
+            'song_suggestions' => $this->faker->sentence,
         ];
+    }
+
+    public function cantMakeIt()
+    {
+        return $this->state(function () {
+            return [
+                'cant_make_it' => true,
+                'ceremony' => false,
+                'afternoon' => false,
+                'evening' => false,
+            ];
+        });
     }
 
     public function eveningOnly()

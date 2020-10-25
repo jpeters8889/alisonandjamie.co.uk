@@ -4,6 +4,7 @@
 @tailwind base;
 @tailwind components;
 
+@import 'animations.scss';
 @import 'transitions.scss';
 @import 'toasted.scss';
 @import 'tooltips.scss';
@@ -31,6 +32,16 @@
         @apply font-semibold
 
         &:hover {
+            @apply underline;
+        }
+    }
+
+    &.thanks-page p {
+        strong, a {
+            @apply font-semibold;
+        }
+
+        a:hover {
             @apply underline;
         }
     }

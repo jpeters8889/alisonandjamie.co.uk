@@ -18,9 +18,11 @@ class CreateBookingsTable extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('invitation_id');
+            $table->boolean('cant_make_it')->nullable();
             $table->boolean('ceremony')->nullable();
             $table->boolean('afternoon')->nullable();
             $table->boolean('evening')->nullable();
+            $table->text('song_suggestions')->nullable();
             $table->timestamps();
         });
     }

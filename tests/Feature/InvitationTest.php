@@ -25,14 +25,21 @@ class InvitationTest extends TestCase
     /** @test */
     public function it_errors_when_trying_to_view_an_invitation_that_doesnt_exist()
     {
-        $this->get('/api/invitation/abc')->assertStatus(404);
+       $this->makeRequest('abc')->assertStatus(404);
     }
 
     /** @test */
     public function it_gets_an_invitations()
     {
-        $this->get('/api/invitation/'.$this->invitation->id)
+        $this->makeRequest()
             ->assertStatus(200)
             ->assertJson($this->invitation->toArray());
+    }
+
+    protected function makeRequest($invitation = null)
+    {
+        return $this->post('/api/invitation', [
+            'invitation' => $invitation ?: $this->invitation->id,
+        ]);
     }
 }

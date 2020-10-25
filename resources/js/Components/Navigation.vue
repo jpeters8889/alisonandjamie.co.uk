@@ -51,20 +51,18 @@ export default {
                 text: 'Travel and Accommodation',
                 href: '/travel-and-accommodation',
             },
-            // {
-            //     text: 'Wedding Party',
-            //     href: '/',
-            // },
-
             {
                 text: 'Q and A',
                 href: '/q-and-a',
             },
-
             {
                 text: 'RSVP',
-                href: '/',
+                href: '/rsvp',
             },
+            {
+                text: 'Thanks To',
+                href: '/thanks-to',
+            }
         ]
     }),
 }

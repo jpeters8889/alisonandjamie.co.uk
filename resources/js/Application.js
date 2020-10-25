@@ -16,7 +16,7 @@ export default class Application {
 
         Vue.use(Toasted, {
             position: "bottom-right",
-            duration: 6000,
+            duration: 3000,
         });
 
         Vue.use(VTooltip);

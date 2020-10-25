@@ -9,8 +9,6 @@
 
         <travel></travel>
     </div>
-    </div>
-
 @endsection
 
 @section('scripts')

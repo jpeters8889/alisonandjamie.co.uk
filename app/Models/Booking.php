@@ -11,25 +11,32 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * @property int                      $id
- * @property Invitation               $invitation
+ * @property int $id
+ * @property Invitation $invitation
  * @property Collection<BookingGuest> $guests
- * @property bool                     $ceremony
- * @property bool                     $afternoon
- * @property bool                     $evening
- * @property Carbon                   $created_at
- * @property Carbon                   $updated_at
+ * @property bool $cant_make_it
+ * @property bool $ceremony
+ * @property bool $afternoon
+ * @property bool $evening
+ * @property string|null $song_suggestions
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  */
 class Booking extends Model
 {
     protected $casts = [
         'limit' => 'int',
+        'cant_make_it' => 'bool',
         'ceremony' => 'bool',
         'afternoon' => 'bool',
         'evening' => 'bool',
     ];
 
     protected $guarded = [];
+
+    protected $hidden = ['created_at', 'updated_at'];
+
+    protected $with = ['guests'];
 
     public function invitation(): BelongsTo
     {
