@@ -93,27 +93,27 @@ export default {
         tidbits: [
             {
                 question: 'How did you meet?',
-                answer: 'We first \'met\' online on Facebook in 2011 before becoming closer friends in July 2012, and meeting in person for the first time in October 2012 at a Bowling for soup concert in Manchester, and then finally getting together on 11th September 2013.',
+                answer: 'We first \'met\' on Facebook in 2011, met in person October 2012 and then finally got together on 11th September 2013.',
             },
             {
                 question: 'Who was interested first?',
-                answer: 'Jamie was definitely interested first, but Alison also had a slight interest, but was scared to go further, we got together for a couple of days on Valentines Day 2013, but Alison found she couldn\'t cope and wasn\'t ready for a relationship. Over the next few months they remained very close friends and Alison\'s feelings grew before she admitted the extent of her feelings and they got together on September 11th 2013.',
+                answer: 'Jamie. It took a while for Alison to decide she liked him enough to date him!',
             },
             {
                 question: 'Favourite holiday together?',
-                answer: 'I think it was when we went to Edinburgh for a week in October 2017, it was our first and longest proper holiday as a couple, the other times we had been away was either with parents, or weekend breaks alone, or following bands on tour, this was our first in a proper holiday cottage for a week on our own. We came to Edinburgh for the first time the year before for a weekend and we both loved the city and came back for a week, and Edinburgh has become one of our favourite places to visit.',
+                answer: 'Probably Edinburgh, October 2017, it was our first proper holiday as a couple. We went to Edinburgh for the first time the year before for a weekend and loved the place.',
             },
             {
                 question: 'Any shared hobbies or interests?',
-                answer: 'We actually have a lot in common, from the majority of our music tastes, to reading material, even TV/Films, whatever one of us reads/listens too/watches, nine times out of ten, the other one likes it too. We\'re both computer geeks too, enjoy web design, though that\'s more Jamie\'s domain now than Alison, and we both are keen amateur photographers.',
+                answer: 'We share a lot of interests, from the majority of our music tastes, to reading material, even TV/Films, whatever one of us reads/listens too/watches, nine times out of ten, the other one likes it too. We\'re both computer geeks too and amateur photographers.',
             },
             {
                 question: 'When and how did we get engaged?',
-                answer: 'We got engaged on Valentines Day 2016, Jamie had been thinking about proposing for a while but hadn\'t yet. We were on holiday for the weekend together stopping near Treardurr Bay, Anglesey, we were walking round the headland together and ended up on the clifftops where Alison\'s grandparents ashes were scattered from when out of the blue Alison proposed to Jamie, and obviously he said yes straight away.',
+                answer: 'We got engaged on Valentines Day 2016, Jamie had been thinking about proposing for a while but hadn\'t. They were near Treardur Bay, Anglesey on the headlands, Alison proposed to Jamie, and obviously he said yes straight away.',
             },
             {
                 question: 'What\'s the honeymoon plans?',
-                answer: 'Well as we mentioned above we both love Edinburgh and even Scotland has a whole, our honeymoon plans are spread over 2 weeks and 3 locations. Our first night we will be in a luxury hotel overlooking Loch Lomond before heading into the Scotish Highlands the next day for the rest of the week stopping near John O\'Groats, and then for the final week we\'re heading down to Edinburgh.'
+                answer: 'As we love Edinburgh and even Scotland has a whole, the honeymoon plans are spread over 2 weeks and 3 locations starting in a luxury hotel overlooking Loch Lomond for the first night, then heading to just outside John O\'Groats for the rest of the week, and the final week in Edinburgh.'
             },
         ],
     }),
