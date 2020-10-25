@@ -5,7 +5,7 @@ const webpack = require('webpack');
 mix.js('resources/js/app.js', 'public/assets/js')
     .sass('resources/scss/app.scss', 'public/assets/css')
     .vue()
-    .copyDirectory('resources/fonts', 'public/fonts')
+    .copyDirectory('resources/fonts', 'public/assets/fonts')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.config.js')],

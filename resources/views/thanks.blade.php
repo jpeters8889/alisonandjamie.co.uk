@@ -15,13 +15,13 @@
         </p>
 
         <p>
-            <strong>Balloons</strong> - with thanks to <a href="" target="_blank">...</a>.
+            <strong>Balloons</strong> - with thanks to <a href="https://www.facebook.com/BeesKneesBalloons"
+                                                          target="_blank">The Bees Knees</a>.
         </p>
 
         <p>
             <strong>Band and Music</strong> - with thanks to <a href="https://funtimefrankies.co.uk/" target="_blank">The
-                Funtime
-                Frankies</a>
+                Funtime Frankies</a>
         </p>
 
         <p>
@@ -43,8 +43,9 @@
         </p>
 
         <p>
-            <strong>Ceremony</strong> - with thanks to <a href="" target="_blank">Crewe Municipal Buildings</a> and
-            Cheshire East Council.
+            <strong>Ceremony</strong> - with thanks to <a
+                href="http://www.civicvenuescheshire.co.uk/weddings-civil-ceremonies-at-crewe-municpal-buildings/"
+                target="_blank">Crewe Municipal Buildings</a> and Cheshire East Council.
         </p>
 
         <p>
@@ -53,26 +54,26 @@
                 Town FC</a>.
         </p>
 
-        <p>
-            <strong>Flowers</strong> - with thanks to <a href="" target="_blank">...</a>.
-        </p>
+        {{--        <p>--}}
+        {{--            <strong>Flowers</strong> - with thanks to <a href="" target="_blank">...</a>.--}}
+        {{--        </p>--}}
 
-        <p>
-            <strong>Hair</strong> - with thanks to <a href="" target="_blank">...</a>.
-        </p>
+        {{--        <p>--}}
+        {{--            <strong>Hair</strong> - with thanks to <a href="" target="_blank">...</a>.--}}
+        {{--        </p>--}}
 
         <p>
             <strong>Invitations</strong> with thanks to Jamie Peters for designing and
-            <a href="" target="_blank">...</a> for printing.
+            <a href="https://www.digitalprinting.co.uk/" target="_blank">Digital Printing UK</a> for printing.
         </p>
 
         <p>
             <strong>Limo Hire</strong> - with thanks to <a href="https://www.limo-sceneuk.co.uk/" target="_blank">Limo-Scene</a>.
         </p>
 
-        <p>
-            <strong>Make Up</strong> - with thanks to <a href="" target="_blank">...</a>.
-        </p>
+        {{--        <p>--}}
+        {{--            <strong>Make Up</strong> - with thanks to <a href="" target="_blank">...</a>.--}}
+        {{--        </p>--}}
 
         <p>
             <strong>Photography</strong> - with thanks to <a href="https://www.thorneweddingphotography.co.uk/"
@@ -80,7 +81,7 @@
         </p>
 
         <p>
-            <strong>Sweets</strong> - with thanks to <a href="" target="_blank">...</a>.
+            <strong>Sweets</strong> - with thanks to <a href="https://www.curlycow.co.uk" target="_blank">Curly Cow</a>.
         </p>
 
         <p>

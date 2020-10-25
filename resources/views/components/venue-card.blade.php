@@ -5,7 +5,7 @@
         <h2 class="heading">{{ $title }}</h2>
         <div class="flex flex-col md:flex-row space-x-4 mx-auto w-full md:justify-center md:items-center mb-2">
             <h3 class="font-headline text-base">{{ $location }}</h3>
-            <h3 class="font-headline text-sm md:text-base">{{ $time }}</h3>
+{{--            <h3 class="font-headline text-sm md:text-base">{{ $time }}</h3>--}}
         </div>
     </div>
 

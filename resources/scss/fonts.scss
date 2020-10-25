@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Dirty Headline';
-    src: url('./fonts/DirtyHeadline.woff') format('woff'),
-    url('./fonts/DirtyHeadline.ttf') format('truetype');
+    src: url('/assets/fonts/DirtyHeadline.woff') format('woff'),
+    url('/assets/fonts/DirtyHeadline.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'PunkRockShow';
-    src: url('./fonts/PunkRockShow-Regular.woff') format('woff'),
-    url('./fonts/PunkRockShow-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/PunkRockShow-Regular.woff') format('woff'),
+    url('/assets/fonts/PunkRockShow-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

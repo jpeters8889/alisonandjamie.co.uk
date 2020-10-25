@@ -10,19 +10,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @include('page-view-builder::header')
-
-    @yield('header')
 </head>
 <body class="flex">
 
-<div class="w-full flex flex-col" id="app">
+<div class="w-full" id="app">
     <header class="w-full flex flex-col">
         <navigation></navigation>
 
         @yield('header')
     </header>
 
-    <div class="flex-1 flex flex-col space-y-3 mt-3 px-2 xl:px-0">
+    <div class="flex flex-col space-y-3 mt-3 px-2 xl:px-0">
         @yield('content')
     </div>
 </div>

@@ -17,8 +17,7 @@
                 lat="53.0984322"
                 lng="-2.4394894"
                 address="Earle St, Crewe CW1 2BJ">
-                The main ceremony will be held in the Mayor's Parlour, Crewe Municipal Buildings with a 12pm
-                start. Don't be late!
+                The main ceremony will be held in the Mayor's Parlour, Crewe Municipal Buildings.
             </x-venue-card>
 
             <x-venue-card
