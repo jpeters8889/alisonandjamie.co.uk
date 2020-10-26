@@ -29,7 +29,7 @@
         </p>
 
         <p>
-            <strong>Bridesmaids</strong> - Lara Bailey, Katie Manuel and Sophie User.
+            <strong>Bridesmaids</strong> - Lara Bailey and Sophie User.
         </p>
 
         <p>
@@ -74,6 +74,10 @@
         {{--        <p>--}}
         {{--            <strong>Make Up</strong> - <a href="" target="_blank">...</a>.--}}
         {{--        </p>--}}
+
+        <p>
+            <strong>Maid of Honour</strong> - Katie Manuel
+        </p>
 
         <p>
             <strong>Photography</strong> - <a href="https://www.thorneweddingphotography.co.uk/"
