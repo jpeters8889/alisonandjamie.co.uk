@@ -2,27 +2,14 @@
 
 @section('content')
 
-    <div class="page-box thanks-page">
+    <div class="page-box thanks-page text-center">
         <h2 class="heading">With Thanks To...</h2>
 
         <p>
             There's a lot of people and companies that are making our wedding possible, which we'd like to thank below
         </p>
 
-        <p>
-            <strong>Afternoon Reception</strong>, including lunch and drinks - <a
-                href="https://cheshirecatnantwich.co.uk/" target="_blank">The Cheshire Cat, Nantwich</a>.
-        </p>
-
-        <p>
-            <strong>Balloons</strong> - <a href="https://www.facebook.com/BeesKneesBalloons"
-                                                          target="_blank">The Bees Knees</a>.
-        </p>
-
-        <p>
-            <strong>Band and Music</strong> - <a href="https://funtimefrankies.co.uk/" target="_blank">The
-                Funtime Frankies</a>
-        </p>
+        <h3 class="font-headline text-lg">Wedding Party</h3>
 
         <p>
             <strong>Best Man</strong> - Daniel Peters.
@@ -33,13 +20,14 @@
         </p>
 
         <p>
-            <strong>Bridal Party Hotel</strong> - <a href="https://cheshirecatnantwich.co.uk/"
-                                                                    target="_blank">The Cheshire Cat, Nantwich</a>.
+            <strong>Maid of Honour</strong> - Katie Manuel
         </p>
 
+        <h3 class="font-headline text-lg">Venues</h3>
+
         <p>
-            <strong>Catering and Wedding Cake</strong> - <a
-                href="https://www.facebook.com/willowcottagekitchen/" target="_blank">Willow Cottage Kitchen</a>.
+            <strong>Afternoon Reception</strong>, including lunch and drinks - <a
+                href="https://cheshirecatnantwich.co.uk/" target="_blank">The Cheshire Cat, Nantwich</a>.
         </p>
 
         <p>
@@ -53,6 +41,31 @@
                 href="https://www.nantwichtownfc.co.uk/function-suite/" target="_blank">The Function suite at Nantwich
                 Town FC</a>.
         </p>
+
+        <h3 class="font-headline text-lg">Suppliers</h3>
+
+        <p>
+            <strong>Balloons</strong> - <a href="https://www.facebook.com/BeesKneesBalloons"
+                                                          target="_blank">The Bees Knees</a>.
+        </p>
+
+        <p>
+            <strong>Band and Music</strong> - <a href="https://funtimefrankies.co.uk/" target="_blank">The
+                Funtime Frankies</a>
+        </p>
+
+
+        <p>
+            <strong>Bridal Party Hotel</strong> - <a href="https://cheshirecatnantwich.co.uk/"
+                                                                    target="_blank">The Cheshire Cat, Nantwich</a>.
+        </p>
+
+        <p>
+            <strong>Catering and Wedding Cake</strong> - <a
+                href="https://www.facebook.com/willowcottagekitchen/" target="_blank">Willow Cottage Kitchen</a>.
+        </p>
+
+
 
         {{--        <p>--}}
         {{--            <strong>Flowers</strong> - <a href="" target="_blank">...</a>.--}}
@@ -75,10 +88,7 @@
         {{--            <strong>Make Up</strong> - <a href="" target="_blank">...</a>.--}}
         {{--        </p>--}}
 
-        <p>
-            <strong>Maid of Honour</strong> - Katie Manuel
-        </p>
-
+        
         <p>
             <strong>Photography</strong> - <a href="https://www.thorneweddingphotography.co.uk/"
                                                              target="_blank">Jon Thorne Photography</a>.

@@ -35,21 +35,23 @@ export default {
 
     methods: {
         createMap() {
-            const center = new google.maps.LatLng(this.lat, this.lng);
+            setTimeout(() => {
+                const center = new google.maps.LatLng(this.lat, this.lng);
 
-            const map = new google.maps.Map(this.$refs[this.mapRef], {
-                center: center,
-                zoom: this.zoom,
-                mapTypeControl: false,
-                streetViewControl: false,
-                rotateControl: false,
-                fullscreenControl: false
-            });
+                const map = new google.maps.Map(this.$refs[this.mapRef], {
+                    center: center,
+                    zoom: this.zoom,
+                    mapTypeControl: false,
+                    streetViewControl: false,
+                    rotateControl: false,
+                    fullscreenControl: false
+                });
 
-            new google.maps.Marker({
-                position: center,
-                map: map,
-            });
+                new google.maps.Marker({
+                    position: center,
+                    map: map,
+                });
+            }, 300);
         }
     },
 

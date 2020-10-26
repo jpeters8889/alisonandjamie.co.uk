@@ -216,6 +216,7 @@ export default {
                 ageRange: '18+',
             }];
 
+            this.songSuggestions = '';
             this.cantMakeIt = !this.cantMakeIt;
         },
 

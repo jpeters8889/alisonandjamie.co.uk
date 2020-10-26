@@ -109,7 +109,7 @@ export default {
             },
             {
                 name: 'Premier Inn, Crewe (West)',
-                text: 'Located on the outskirts of Crewe, 7 minutes drive from the ceremony venue and 10 minutes from the afternoon an evening venues.',
+                text: 'Located on the outskirts of Crewe, 7 minutes drive from the ceremony venue and 10 minutes from the afternoon and evening venues.',
                 lat: 53.09574,
                 lng: -2.48503,
                 address: 'Weston Rd, Crewe CW1 6FX',

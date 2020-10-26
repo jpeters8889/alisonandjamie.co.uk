@@ -113,7 +113,7 @@ export default {
             },
             {
                 question: 'What\'s the honeymoon plans?',
-                answer: 'As we love Edinburgh and even Scotland has a whole, the honeymoon plans are spread over 2 weeks and 3 locations starting in a luxury hotel overlooking Loch Lomond for the first night, then heading to just outside John O\'Groats for the rest of the week, and the final week in Edinburgh.'
+                answer: 'As we love Edinburgh and even Scotland as a whole, the honeymoon plans are spread over 2 weeks and 3 locations starting in a luxury hotel overlooking Loch Lomond for the first night, then heading to just outside John O\'Groats for the rest of the week, and the final week in Edinburgh.'
             },
         ],
     }),
