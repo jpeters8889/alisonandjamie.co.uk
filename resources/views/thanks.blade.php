@@ -88,7 +88,7 @@
         {{--            <strong>Make Up</strong> - <a href="" target="_blank">...</a>.--}}
         {{--        </p>--}}
 
-        
+
         <p>
             <strong>Photography</strong> - <a href="https://www.thorneweddingphotography.co.uk/"
                                                              target="_blank">Jon Thorne Photography</a>.

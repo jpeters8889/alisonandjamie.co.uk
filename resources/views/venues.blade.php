@@ -6,7 +6,8 @@
         <h2 class="heading">Venues and Schedule</h2>
 
         <p>
-            Our day is spread over 3 main venues starting at midday!
+            Our day is spread over 3 main venues starting at midday! Due to limitations on numbers at each venue your
+            invitation will confirm which venues you are invited to.
         </p>
 
         <div class="flex flex-col space-y-3">
@@ -43,7 +44,8 @@
                 Party Time!<br/>
                 <br/>
                 Come join us in our concert / music themed evening reception, featuring live music from
-                <a href="https://funtimefrankies.co.uk/" target="_blank" class="font-semibold hover:underline">The Funtime Frankies</a>!
+                <a href="https://funtimefrankies.co.uk/" target="_blank" class="font-semibold hover:underline">The
+                    Funtime Frankies</a>!
             </x-venue-card>
         </div>
     </div>
