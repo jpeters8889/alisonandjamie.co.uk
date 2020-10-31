@@ -9,8 +9,8 @@
                 <strong class="font-headline font-semibold mb-2 text-lg">When is the RSVP deadline?</strong>
 
                 <p>
-                    Your invitation will have a deadline on it, for people attending for the entire day it will be 31st
-                    May 2021, and 30th June 2021 for those attending in just the evening.
+                    Your invitation will have the RSVP deadline on it, we'd love it if you can get your RSVP back to
+                    us before the 31st May 2021
                 </p>
             </div>
 
