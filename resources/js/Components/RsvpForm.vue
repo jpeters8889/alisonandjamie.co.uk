@@ -172,9 +172,11 @@ export default {
         }
 
         if (!this.guests.length) {
-            this.guests.push({
-                name: this.invitation.name,
-                ageRange: '18+',
+            this.invitation.preset_names.forEach((name) => {
+                this.guests.push({
+                    name: name,
+                    ageRange: '18+',
+                });
             });
         }
     },

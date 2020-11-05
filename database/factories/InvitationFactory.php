@@ -23,12 +23,20 @@ class InvitationFactory extends Factory
      */
     public function definition()
     {
+        $names = [];
+        $limit = random_int(2, 5);
+
+        for ($x = 0; $x < random_int(1, $limit - 1); $x++) {
+            $names[] = $this->faker->name;
+        }
+
         return [
             'name' => $this->faker->name,
-            'limit' => random_int(1, 5),
+            'limit' => $limit,
             'ceremony' => true,
             'afternoon' => true,
             'evening' => true,
+            'preset_names' => $names
         ];
     }
 

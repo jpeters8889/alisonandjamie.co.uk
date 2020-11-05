@@ -9,15 +9,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
- * @property int     $id
- * @property string  $name
- * @property int     $limit
- * @property bool    $ceremony
- * @property bool    $afternoon
- * @property bool    $evening
+ * @property int $id
+ * @property string $name
+ * @property int $limit
+ * @property bool $ceremony
+ * @property bool $afternoon
+ * @property bool $evening
+ * @property array $preset_names
  * @property Booking $booking
- * @property Carbon  $created_at
- * @property Carbon  $updated_at
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
  */
 class Invitation extends Model
 {
@@ -26,6 +27,7 @@ class Invitation extends Model
         'ceremony' => 'bool',
         'afternoon' => 'bool',
         'evening' => 'bool',
+        'preset_names' => 'array',
     ];
 
     protected $guarded = [];
@@ -39,7 +41,7 @@ class Invitation extends Model
     protected static function booted()
     {
         static::creating(static function (self $invitation) {
-            if(!$invitation->id) {
+            if (!$invitation->id) {
                 $invitation->id = random_int(100, 999);
             }
 

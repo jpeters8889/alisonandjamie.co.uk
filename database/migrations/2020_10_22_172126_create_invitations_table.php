@@ -22,6 +22,7 @@ class CreateInvitationsTable extends Migration
             $table->boolean('ceremony')->default(false);
             $table->boolean('afternoon')->default(false);
             $table->boolean('evening')->default(true);
+            $table->text('preset_names');
             $table->timestamps();
         });
     }

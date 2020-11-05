@@ -29,9 +29,9 @@ class BookingRequest extends ApiFormRequest
         return [
             'invitation_id' => ['required', 'exists:invitations,id'],
             'cantMakeIt' => ['bool'],
-            'ceremony' => ['bool', new BookingCeremonyAvailableRule($this)],
-            'afternoon' => ['bool', new BookingAfternoonAvailableRule($this)],
-            'evening' => ['bool', new BookingEveningAvailableRule($this)],
+            'ceremony' => [new BookingCeremonyAvailableRule($this)],
+            'afternoon' => [new BookingAfternoonAvailableRule($this)],
+            'evening' => [new BookingEveningAvailableRule($this)],
             'guests' => ['required', 'array', new BookingGuestLimitRule($this)],
             'guests.*.name' => ['required'],
             'guests.*.ageRange' => ['required', Rule::in(['0-4', '5-12', '13-18', '18+'])],
