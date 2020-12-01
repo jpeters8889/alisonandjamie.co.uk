@@ -271,7 +271,7 @@ export default {
         validate() {
             if (!this.cantMakeIt) {
                 if (![this.ceremony, this.afternoon, this.evening].includes(true)) {
-                    app().error('Please choose at least one option!')
+                    app().error('Please choose at least one option to RSVP too!')
                     return false;
                 }
 

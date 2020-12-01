@@ -6,7 +6,7 @@
 
         <input type="text"
                class="w-4/5 p-2 text-lg font-headline text-center bg-gray-100 border border-gray-400 rounded-xl focus:border-gray-600 focus:outline-none"
-               v-model="invitationCode" :disabled="loading"/>
+               v-model="invitationCode" :disabled="loading" @keyup.enter="submit"/>
 
         <button class="transition-bg py-2 px-8 text-white font-headline text-xl rounded"
                 :class="loading ? 'bg-green-300' : 'bg-green-600 hover:bg-green-500'" :disabled="loading"
