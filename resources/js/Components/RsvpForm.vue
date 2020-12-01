@@ -50,6 +50,8 @@
                     {{ invitation.limit - 1 }} {{ invitation.limit === 2 ? 'guest' : 'guests' }}.</p>
 
                 <div class="flex flex-col space-y-3">
+
+
                     <div class="flex space-x-2" v-for="(guest, index) in guests">
                         <input type="text" class="rounded border border-gray-200 p-1 flex-1"
                                v-model="guest.name"
@@ -175,7 +177,7 @@ export default {
             this.invitation.preset_names.forEach((name) => {
                 this.guests.push({
                     name: name,
-                    ageRange: '18+',
+                    ageRange: '',
                 });
             });
         }

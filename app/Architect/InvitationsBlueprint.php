@@ -20,8 +20,8 @@ class InvitationsBlueprint extends Blueprint
     {
         return [
             Textfield::generate('id')->hideOnForms(),
-            Textfield::generate('name', 'Primary Name'),
-            PresetNames::generate('preset_names', 'Additional Preset Names'),
+            Textfield::generate('name', 'Introduction'),
+            PresetNames::generate('preset_names', 'Prefilled Names'),
             Textfield::generate('limit', 'Guest Limit')->setDefault('2'),
             Boolean::generate('ceremony'),
             Boolean::generate('afternoon'),
