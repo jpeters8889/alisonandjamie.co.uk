@@ -14,7 +14,7 @@ class InvitationModelTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function it_creates_an_three_digit_id_when_creating_a_row()
+    public function it_creates_an_four_digit_id_when_creating_a_row()
     {
         /** @var Invitation $invitation */
         $invitation = Factory::factoryForModel(Invitation::class)->make();
@@ -24,6 +24,6 @@ class InvitationModelTest extends TestCase
         $invitation->save();
 
         $this->assertNotNull($invitation->refresh());
-        $this->assertTrue($invitation->id >= 100 && $invitation->id <= 999);
+        $this->assertTrue($invitation->id >= 1000 && $invitation->id <= 9999);
     }
 }

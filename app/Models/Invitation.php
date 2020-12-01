@@ -42,7 +42,7 @@ class Invitation extends Model
     {
         static::creating(static function (self $invitation) {
             if (!$invitation->id) {
-                $invitation->id = random_int(100, 999);
+                $invitation->id = random_int(1000, 9999);
             }
 
             return $invitation;

@@ -12,9 +12,12 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jpeters/architect": "^0.5.2",
         "jpeters/laravel-page-view": "^0.1.5",
         "laravel/framework": "^8.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "wedding/invitation-booking-details": "dev-main",
+        "wedding/invitation-names": "dev-main"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5.1",
@@ -29,6 +32,20 @@
         "phpunit/phpunit": "^9.3",
         "squizlabs/php_codesniffer": "^3.5"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jpeters8889/architect"
+        },
+        {
+            "type": "path",
+            "url": "./architect/plans/invitation-names"
+        },
+        {
+            "type": "path",
+            "url": "./architect/plans/invitation-booking-details"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

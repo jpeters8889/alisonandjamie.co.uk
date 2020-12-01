@@ -1,0 +1,21 @@
+{
+    "name": "wedding/invitation-names",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\Architect\\Plans\\InvitationNames\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Architect\\Plans\\InvitationNames\\PlanServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
