@@ -47,8 +47,8 @@ class InvitationsBlueprint extends Blueprint
             ],
             [
                 'name',
-                'asc',
-            ],
+                'desc',
+            ]
         ];
     }
 }
