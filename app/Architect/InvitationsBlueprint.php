@@ -29,4 +29,26 @@ class InvitationsBlueprint extends Blueprint
             Booking::generate('', 'RSVP'),
         ];
     }
+
+    public function ordering(): array
+    {
+        return [
+            [
+                'ceremony',
+                'desc',
+            ],
+            [
+                'afternoon',
+                'desc',
+            ],
+            [
+                'evening',
+                'desc',
+            ],
+            [
+                'name',
+                'asc',
+            ]
+        ];
+    }
 }
