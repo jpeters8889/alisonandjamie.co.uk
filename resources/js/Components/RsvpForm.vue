@@ -42,47 +42,47 @@
             </div>
 
             <div class="lg:w-1/2 lg:pl-2">
-                <h3 class="font-headline text-lg mt-2 lg:mt-0">
-                    Attendees
-                </h3>
+                <div v-if="invitation.limit > 1">
+                    <h3 class="font-headline text-lg mt-2 lg:mt-0">
+                        Attendees
+                    </h3>
 
-                <p>Your invite allows to bring yourself and {{ invitation.limit > 2 ? 'up to' : '' }}
-                    {{ invitation.limit - 1 }} {{ invitation.limit === 2 ? 'guest' : 'guests' }}.</p>
+                    <p>Your invite allows to bring yourself and {{ invitation.limit > 2 ? 'up to' : '' }}
+                        {{ invitation.limit - 1 }} {{ invitation.limit === 2 ? 'guest' : 'guests' }}.</p>
 
-                <div class="flex flex-col space-y-3">
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex space-x-2" v-for="(guest, index) in guests">
+                            <input type="text" class="rounded border border-gray-200 p-1 flex-1"
+                                   v-model="guest.name"
+                                   placeholder="Name..."
+                                   :disabled="index === 0 || cantMakeIt"/>
 
+                            <select class="rounded border border-gray-200 p-1" v-model="guest.ageRange"
+                                    :disabled="cantMakeIt">
+                                <option disabled value="">Age Range</option>
+                                <option value="0-4">0 - 4</option>
+                                <option value="5-12">5 - 12</option>
+                                <option value="13-18">13 - 18</option>
+                                <option value="18+">18+</option>
+                            </select>
 
-                    <div class="flex space-x-2" v-for="(guest, index) in guests">
-                        <input type="text" class="rounded border border-gray-200 p-1 flex-1"
-                               v-model="guest.name"
-                               placeholder="Name..."
-                               :disabled="index === 0 || cantMakeIt"/>
+                            <button :class="!cantMakeIt && index > 0 ? 'bg-red-500' : 'bg-gray-200'"
+                                    class="rounded p-2 text-center text-white"
+                                    :disabled="index === 0"
+                                    v-tooltip="'Delete Guest'"
+                                    @click.prevent="deleteGuest(index)">
+                                <font-awesome-icon :icon="['fas', 'times']"></font-awesome-icon>
+                            </button>
+                        </div>
 
-                        <select class="rounded border border-gray-200 p-1" v-model="guest.ageRange"
-                                :disabled="cantMakeIt">
-                            <option disabled value="">Age Range</option>
-                            <option value="0-4">0 - 4</option>
-                            <option value="5-12">5 - 12</option>
-                            <option value="13-18">13 - 18</option>
-                            <option value="18+">18+</option>
-                        </select>
-
-                        <button :class="!cantMakeIt && index > 0 ? 'bg-red-500' : 'bg-gray-200'"
-                                class="rounded p-2 text-center text-white"
-                                :disabled="index === 0"
-                                v-tooltip="'Delete Guest'"
-                                @click.prevent="deleteGuest(index)">
-                            <font-awesome-icon :icon="['fas', 'times']"></font-awesome-icon>
+                        <button
+                            class="transition-bg py-2 px-8 text-white font-headline text-xl rounded"
+                            :class="guests.length < invitation.limit && !cantMakeIt ? 'bg-green-600 hover:bg-green-500' : 'bg-green-200 cursor-disabled'"
+                            :disabled="guests.length >= invitation.limit || cantMakeIt" @click.prevent="addGuest()">
+                            Add Another Guest
                         </button>
+
                     </div>
-
-                    <button
-                        class="transition-bg py-2 px-8 text-white font-headline text-xl rounded"
-                        :class="guests.length < invitation.limit && !cantMakeIt ? 'bg-green-600 hover:bg-green-500' : 'bg-green-200 cursor-disabled'"
-                        :disabled="guests.length >= invitation.limit || cantMakeIt" @click.prevent="addGuest()">
-                        Add Another Guest
-                    </button>
-
                 </div>
 
                 <p class="mt-2">
@@ -180,6 +180,10 @@ export default {
                     ageRange: '',
                 });
             });
+
+            if (this.invitation.limit === 1) {
+                this.guests[0].ageRange = '18+';
+            }
         }
     },
 
@@ -288,7 +292,7 @@ export default {
                 });
 
                 if (guestError) {
-                    app().error('Please make sure all guest details are completed');
+                    app().error('Please make sure all guest details are completed, including age ranges!');
                     return false;
                 }
             }
@@ -323,7 +327,13 @@ export default {
             }
 
             if (invitedTo.length === 1) {
-                return `You're invited to our ${invitedTo[0]}! If you can make it please check the box below and add the names of any attendees!`;
+                text = `You're invited to our ${invitedTo[0]}! `;
+
+                if(this.invitation.limit === 1) {
+                    return text + `If you can make it please check the box below and submit your RSVP!`
+                }
+
+                return text + `If you can make it please check the box below and add the names of any attendees!`;
             }
 
             if (invitedTo.length === 2) {
@@ -334,7 +344,13 @@ export default {
                 text = `You're invited to our ${invitedTo[0]}, ${invitedTo[1]} and our ${invitedTo[2]}!`
             }
 
-            return text + `<br/><br/>Please check the boxes below for the event(s) you plan to attend and add the names of any attendees!`
+            text += `<br/><br/>Please check the boxes below for the event(s) you plan to attend `
+
+            if(this.invitation.limit === 1) {
+                return text + `and submit your RSVP below!`;
+            }
+
+            return text + `and add the names of any attendees!`;
         },
     },
 }
