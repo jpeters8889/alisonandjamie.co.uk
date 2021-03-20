@@ -20,6 +20,7 @@
 
                         <div class="flex flex-col flex-1 justify-center p-3">
                             <h2 class="font-headline text-lg text-left">{{ option.title }}</h2>
+                            <h3 class="font-headline text-left">{{ option.date }}</h3>
                             <p class="text-sm mb-0">{{ option.address }}</p>
                         </div>
                     </div>
@@ -49,6 +50,10 @@
 
                     <p>Your invite allows to bring yourself and {{ invitation.limit > 2 ? 'up to' : '' }}
                         {{ invitation.limit - 1 }} {{ invitation.limit === 2 ? 'guest' : 'guests' }}.</p>
+
+                    <p v-if="invitation.preset_names.length > 1">We've prefilled your additional attendees, if you wish to remove any please click the red X button.</p>
+
+                    <p>For each of your guests please give us a name and their age range!</p>
 
                     <div class="flex flex-col space-y-3">
                         <div class="flex space-x-2" v-for="(guest, index) in guests">
@@ -132,18 +137,21 @@ export default {
             {
                 variable: 'ceremony',
                 title: 'Wedding Ceremony',
+                date: '11th September 2021, 12pm',
                 address: 'Crewe Municipal Buildings, Earle St, Crewe CW1 2BJ',
             },
 
             {
                 variable: 'afternoon',
                 title: 'Afternoon Reception',
+                date: '11th September 2021, 2pm',
                 address: 'Cheshire Cat, 26 Welsh Row, Nantwich CW5 5ED',
             },
 
             {
                 variable: 'evening',
                 title: 'Evening Reception',
+                date: '11th September 2021, 7pm - Midnight',
                 address: 'Nantwich Town FC, The Weaver Stadium, Water-Lode, Nantwich CW5 5BS',
             },
         ]
