@@ -18,20 +18,21 @@
                 <strong class="font-headline font-semibold mb-2 text-lg">Can I bring a date / the kids?</strong>
 
                 <p>
-                    We've tried to put a +1 on all the invitations where we can, and even tried leaving space for kids
-                    where we can! When RSVPing through the website you'll have the opportunity to add your +1 and kids!
+                    Your invite will state how many guests you can bring with you, whether thats your other half, or the
+                    kids! When you complete your RSVP you'll be able to list who your guests are and their age range.
                 </p>
             </div>
 
             <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
-                <strong class="font-headline font-semibold mb-2 text-lg">What is there for kids to do / Is the evening child
-                    friendly?</strong>
+                <strong class="font-headline font-semibold mb-2 text-lg">
+                    What is there for kids to do / Is the evening child friendly?
+                </strong>
 
                 <p>
                     The evening reception at Nantwich Football Club will have a live band playing, so it could be a
                     little noisy for young children, so that's at your discretion. For any kids we know to be attending
-                    we'll try and put together a different goody bag for them! They'll be things like inflatable guitars
-                    available on the night for bits of fun!
+                    we'll try and put together a special goody bag for them! They'll be things like inflatable guitars
+                    available on the night for bits of fun, plus buffet food and a sweet stall!
                 </p>
             </div>
 
@@ -65,13 +66,15 @@
             </div>
 
             <div class="flex flex-col bg-gray-200 rounded p-2 shadow">
-                <strong class="font-headline font-semibold mb-2 text-lg">What food is on offer? / I have a dietary
-                    restriction!</strong>
+                <strong class="font-headline font-semibold mb-2 text-lg">
+                    What food is on offer? / I have a dietary restriction!</strong>
 
                 <p>
-                    If your invited to our afternoon reception at the Cheshire Cat then they have a
-                    <a href="https://cheshirecatnantwich.co.uk/?page_id=13" target="_blank">full menu</a>
-                    available online.
+                    If your invited to our afternoon reception at the Cheshire Cat then they have an
+                    <a href="https://cheshirecatnantwich.co.uk/?page_id=13" target="_blank">example menu</a>
+                    available online, we'll be sending out a final menu to anyone invited to join us in the afternoon a
+                    few weeks beforehand so we can get an idea of what people will be wanting and pass this info on to
+                    the venue.
                 </p>
 
                 <p>

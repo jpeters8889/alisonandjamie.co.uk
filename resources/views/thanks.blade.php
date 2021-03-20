@@ -16,24 +16,24 @@
         </p>
 
         <p>
-            <strong>Bridesmaids</strong> - Lara Bailey and Sophie User.
+            <strong>Maid of Honour</strong> - Katie Manuel
         </p>
 
         <p>
-            <strong>Maid of Honour</strong> - Katie Manuel
+            <strong>Bridesmaids</strong> - Lara Bailey and Sophie User.
         </p>
 
         <h3 class="font-headline text-lg">Venues</h3>
 
         <p>
-            <strong>Afternoon Reception</strong>, including lunch and drinks - <a
-                href="https://cheshirecatnantwich.co.uk/" target="_blank">The Cheshire Cat, Nantwich</a>.
-        </p>
-
-        <p>
             <strong>Ceremony</strong> - <a
                 href="http://www.civicvenuescheshire.co.uk/weddings-civil-ceremonies-at-crewe-municpal-buildings/"
                 target="_blank">Crewe Municipal Buildings</a> and Cheshire East Council.
+        </p>
+
+        <p>
+            <strong>Afternoon Reception</strong>, including lunch and drinks - <a
+                href="https://cheshirecatnantwich.co.uk/" target="_blank">The Cheshire Cat, Nantwich</a>.
         </p>
 
         <p>
