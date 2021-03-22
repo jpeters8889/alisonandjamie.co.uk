@@ -4,13 +4,15 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Events\RsvpCompleted;
 use App\Http\Requests\BookingRequest;
 use App\Models\Booking;
+use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Collection;
 
 class BookingController extends Controller
 {
-    public function create(BookingRequest $request)
+    public function create(BookingRequest $request, Dispatcher $dispatcher)
     {
         /** @var Booking $booking */
         $booking = $request->invitation()->booking()->updateOrCreate([], [
@@ -30,5 +32,7 @@ class BookingController extends Controller
                     'age_range' => $guest['ageRange'],
                 ]);
             });
+
+        $dispatcher->dispatch(new RsvpCompleted($booking));
     }
 }

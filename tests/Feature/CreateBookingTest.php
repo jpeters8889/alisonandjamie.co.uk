@@ -4,12 +4,14 @@ declare(strict_types=1);
 
 namespace Tests\Feature;
 
+use App\Events\RsvpCompleted;
 use App\Models\Booking;
 use App\Models\BookingGuest;
 use App\Models\Invitation;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Event;
 use Tests\TestCase;
 
 class CreateBookingTest extends TestCase
@@ -25,6 +27,8 @@ class CreateBookingTest extends TestCase
         $this->setUpFaker();
 
         $this->invitation = Factory::factoryForModel(Invitation::class)->create();
+
+        Event::fake();
     }
 
     /** @test */
@@ -233,6 +237,14 @@ class CreateBookingTest extends TestCase
         $this->makeRequest(['song_suggestions' => 'Foobar']);
 
         $this->assertEquals('Foobar', $this->invitation->fresh()->booking->song_suggestions);
+    }
+
+    /** @test */
+    public function it_dispatches_an_event_when_the_booking_is_completed()
+    {
+        $this->makeRequest();
+
+        Event::assertDispatched(RsvpCompleted::class);
     }
 
     protected function makeRequest($params = [])

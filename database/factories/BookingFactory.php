@@ -24,7 +24,6 @@ class BookingFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
             'cant_make_it' => false,
             'ceremony' => true,
             'afternoon' => true,

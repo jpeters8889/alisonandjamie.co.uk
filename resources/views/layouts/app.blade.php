@@ -16,6 +16,16 @@
     <link rel="preload" as="font" href="/assets/fonts/PunkRockShow-Regular.ttf" type="font/ttf" crossorigin="anonymous">
     <link rel="preload" as="font" href="/assets/fonts/PunkRockShow-Regular.woff" type="font/woff" crossorigin="anonymous">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDVRZEFJKY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PDVRZEFJKY');
+    </script>
+
 </head>
 <body class="flex">
 
