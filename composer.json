@@ -17,6 +17,7 @@
         "jpeters/laravel-page-view": "^0.1.5",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
+        "predis/predis": "^1.1",
         "wedding/invitation-booking-details": "dev-main",
         "wedding/invitation-names": "dev-main"
     },
