@@ -23,6 +23,10 @@
             <strong>Bridesmaids</strong> - Lara Bailey and Sophie User.
         </p>
 
+        <p>
+            Page Boy - Jaxon
+        </p>
+
         <h3 class="font-headline text-lg">Venues</h3>
 
         <p>
