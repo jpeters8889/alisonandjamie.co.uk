@@ -95,7 +95,7 @@
         </p>
 
         <p>
-            <strong>Sweets</strong> - <a href="https://www.curlycow.co.uk" target="_blank">Curly Cow</a>.
+            <strong>Sweets</strong> - <a href="https://www.facebook.com/swetdestiny/" target="_blank">Sweet Destiny</a>.
         </p>
 
         <p>
