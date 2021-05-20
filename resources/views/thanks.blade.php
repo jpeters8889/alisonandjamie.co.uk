@@ -24,7 +24,7 @@
         </p>
 
         <p>
-            Page Boy - Jaxon
+            <strong>Page Boy</strong> - Jaxon
         </p>
 
         <h3 class="font-headline text-lg">Venues</h3>
